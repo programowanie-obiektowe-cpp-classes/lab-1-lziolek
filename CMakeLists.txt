@@ -7,3 +7,6 @@ target_include_directories(zal PUBLIC include)
 set_target_properties(zal PROPERTIES
     CXX_STANDARD 23
 )
+if(MINGW)
+  target_link_libraries(zal "-lstdc++exp")
+endif()
