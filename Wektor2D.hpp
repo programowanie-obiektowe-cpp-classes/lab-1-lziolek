@@ -1,20 +1,15 @@
-#include <print>
+
 
 class Wektor2D
 {
 
     // Tutaj napisz implementacje klasy Wektor2D
     public:
-    Wektor2D() { x=0; y=0;
-   std::println("Początek wektora: [{},{}]",x,y); 
-   } 
+    Wektor2D() { x=0; y=0; } 
 
-    Wektor2D(double a, double b){ x=a; y=b;
-   std::println("Początek wektora: [{},{}]",x,y); 
-   }
+    Wektor2D(double a, double b){ x=a; y=b; }
     
-     ~Wektor2D(){std::println("Koniec wektora [{},{}]",x,y);
-}
+     ~Wektor2D(){}
 
      void setX(double a) { x=a; }
     void setY(double b) { y=b; }
